@@ -1,0 +1,352 @@
+created_by: wilbert
+version: 2
+seed_examples:
+- answer: |
+    Joel Riddle's total compensation is $1,108,460.
+  context: |
+    Name and Principal
+
+    Position        Year            Salary ($)(1)            Non-Equity Incentive
+
+    Compensation ($) (2)            All Other
+
+    Compensation ($)            Total (3)
+
+    Joel Riddle (4)
+
+    2023                565,658                525,781                17,021(5)                1,108,460
+
+    Managing Director and Chief Executive Officer
+
+    Eric Dyer (4)
+
+    2023                449,738                210,313                —                 660,051
+
+    Chief Financial Officer
+
+    Faron Thibodeaux
+
+    2023                396,229                240,600                59,347(6)                649,334
+
+    Chief Operating Officer
+  question: |
+    What was Joel Riddle's total compensation in 2023?
+- answer: >
+    The first two 5% of more stockholders listed are Sheffield Holdings, LP
+    and Nuveen LLC.
+  context: |
+    Beneficial Ownership
+    Before the Offering        Beneficial Ownership
+    After the Offering
+    Common
+    Stock        Total Voting
+    Power Before
+    the Offering        Common Stock        Total Voting
+    Power After
+    the Offering
+    Name of Beneficial Owner
+    Shares        %          %          Shares        %          %
+    5% or more Stockholders
+    Sheffield Holdings, LP(1)
+    1,717,788                        16.7
+    Nuveen LLC(2)
+    1,087,420                        10.6
+    Morgan Stanley Australia Ltd.(3)
+    663,747                        6.4
+    The Baupost Group, L.L.C.(4)
+    588,513                        5.7
+    Helmerich & Payne International Holdings LLC(5)
+    529,761                        5.1
+    Named Executive Officers and Directors
+    Joel Riddle(6)
+    120,920                        1.2
+    Eric Dyer(7)
+    59,862                        *
+    Faron Thibodeaux(8)
+    33,998                        *
+    Richard Stoneburner(9)
+    33,149                        *
+    Fredrick Barrett(10)
+    33,804                        *
+    John Bell(11)
+    —                        —
+    Ryan Dalton
+    —                        —
+    Table of Contents
+    Beneficial Ownership
+    Before the Offering        Beneficial Ownership
+    After the Offering
+    Common
+    Stock        Total Voting
+    Power Before
+    the Offering        Common Stock        Total Voting
+    Power After
+    the Offering
+    Name of Beneficial Owner
+    Shares        %          %          Shares        %          %
+    Patrick Elliott(12)
+    142,223                        1.4
+    Stephanie Reed
+    —                        —
+    Andrew Robb
+    —                        —
+    David Siegel(13)
+    310,166                        3.0
+    All executive officers and directors as a group (11 persons)
+    734,122                        7.1
+  question: |
+    List the first two 5% of more stockholders listed.
+- answer: |
+    The mentioned operators are Santos and Tamboran.
+  context: >
+    Well Name        Operator       Non-Operator(s)        Exploration
+
+    Permit        Date Drilled        Tamboran
+
+    Working Interest
+
+    Tanumbirini #2 (“T2H”)
+
+    Santos        Tamboran        161        May 2021                25%
+
+    Tanumbirini #3 (“T3H”)
+
+    Santos        Tamboran        161        August 2021                25%
+
+    Maverick 1V (“M1V”)
+
+    Tamboran        N/A        136        August 2022                100%
+
+    Amungee NW-2H (“A2H”)
+
+    Tamboran        DWE & FOG        98        November 2022                38.75%
+
+    Shenandoah South 1H (“SS1H”)
+
+    Tamboran        DWE & FOG        117        August 2023                38.75%
+
+    Amungee NW 3H (“A3H”)
+
+    Tamboran        DWE & FOG        98        September 2023                38.75%
+  question: |
+    List all operators mentioned.
+- answer: |
+    The low for the 2023 Fiscal Year is 0.622x.
+  context: |
+    Six Months ended
+    December 31,        Fiscal Year
+    2023        2022        2023        2022
+    High for the period
+    0.689x                0.712x                0.712x                0.762x
+    Low for the period
+    0.629x                0.622x                0.622x                0.688x
+    End of the period
+    0.682x                0.678x                0.666x                0.688x
+    Average for the period(1)
+    0.653x                0.671x                0.673x                0.726x
+  question: |
+    List the low for the 2023 Fiscal Year.
+- answer: |
+    Andrew Robb was paid or earned in cash $22,069.
+  context: |
+    Name        Fees Earned
+    or Paid in
+    Cash ($)        All Other
+    Compensation ($)        Total ($)
+    Richard Stoneburner
+    148,686                —                  148,686
+    Fred Barrett
+    108,137                —                  108,137
+    Patrick Elliott (1)
+    99,267                —                  99,267
+    David Siegel
+    99,688                —                  99,688
+    Andrew Robb (2)(3)
+    22,069                —                  22,069
+    John Bell (4)
+    —                —                  —
+    Dan Chandra (5)
+    72,279                —                  72,279
+    Ann Diamant (2)(6)
+    77,195                8,105  (5)                  85,300
+  question: |
+    What fees were Andrew Robb paid or earned in cash?
+- answer: |
+    The average number of transactions per day is 450.
+  context: |
+    Date         Transactions
+    2023-07-01   435
+    2023-07-02   460
+    2023-07-03   420
+    2023-07-04   490
+    2023-07-05   445
+    2023-07-06   470
+    2023-07-07   450
+  question: |
+    Calculate the average number of transactions per day.
+- answer: |
+    The total revenue for Q1 2023 is $950,000.
+  context: |
+    Quarter   Revenue ($)
+    Q1 2023   950,000
+    Q2 2023   1,200,000
+    Q3 2023   1,150,000
+    Q4 2023   1,300,000
+  question: |
+    What is the total revenue for Q1 2023?
+- answer: |
+    The compliance rate for 2023 is 95%.
+  context: |
+    Year   Compliance Rate (%)
+    2022   93
+    2023   95
+    2024   97
+  question: |
+    What is the compliance rate for 2023?
+- answer: |
+    The interest rate for the loan is 3.5%.
+  context: |
+    Loan Amount   Interest Rate (%)
+    $500,000      3.5
+    $750,000      4.0
+    $1,000,000    4.5
+  question: |
+    What is the interest rate for the $500,000 loan?
+- answer: |
+    The total number of units sold in June is 1,500.
+  context: |
+    Date         Units Sold
+    2023-06-01   250
+    2023-06-02   200
+    2023-06-03   150
+    2023-06-04   180
+    2023-06-05   170
+    2023-06-06   150
+    2023-06-07   400
+  question: |
+    Calculate the total number of units sold in June.
+- answer: |
+    The total expenses for the project are $85,000.
+  context: |
+    Item           Cost ($)
+    Labor          50,000
+    Materials      25,000
+    Miscellaneous  10,000
+  question: |
+    What are the total expenses for the project?
+- answer: |
+    The expected delivery time is 3 days.
+  context: |
+    Delivery Method   Time (days)
+    Standard          5
+    Express           3
+    Overnight         1
+  question: |
+    What is the expected delivery time for express delivery?
+- answer: |
+    The net profit for the year is $150,000.
+  context: |
+    Year   Revenue ($)   Expenses ($)   Net Profit ($)
+    2023   500,000       350,000        150,000
+    2022   450,000       300,000        150,000
+    2021   400,000       250,000        150,000
+  question: |
+    What is the net profit for 2023?
+- answer: |
+    The median salary is $75,000.
+  context: |
+    Employee   Salary ($)
+    John       70,000
+    Jane       80,000
+    Bob        75,000
+    Alice      85,000
+    Steve      60,000
+  question: |
+    What is the median salary?
+- answer: |
+    The total investment for the project is $500,000.
+  context: |
+    Investment   Amount ($)
+    Seed         100,000
+    Series A     200,000
+    Series B     200,000
+  question: |
+    What is the total investment for the project?
+- answer: |
+    The average completion percentage for the Development and Testing tasks is 67.5%.
+  context: |
+    Task             Completion (%)
+    Planning         100
+    Design           90
+    Development      75
+    Testing          60
+    Deployment       50
+  question: |
+    Calculate the average completion percentage for the Development and Testing tasks.
+- answer: |
+    The total sales for Product A in Q1 2023 is $50,000.
+  context: |
+    Product   January ($)   February ($)   March ($)
+    A         15,000        20,000         15,000
+    B         10,000        12,000         8,000
+    C         5,000         7,000          9,000
+  question: |
+    What are the total sales for Product A in Q1 2023?
+- answer: |
+    The average monthly sales for Product B is $10,000.
+  context: |
+    Product   January ($)   February ($)   March ($)
+    A         15,000        20,000         15,000
+    B         10,000        12,000         8,000
+    C         5,000         7,000          9,000
+  question: |
+    What is the average monthly sales for Product B?
+- answer: |
+    The total inventory value is $55,000.
+  context: |
+    Item        Quantity   Unit Price ($)   Total Value ($)
+    Item 1      100        200              20,000
+    Item 2      150        100              15,000
+    Item 3      200        100              20,000
+  question: |
+    What is the total inventory value?
+- answer: |
+    The highest expense category is Labor with $50,000.
+  context: |
+    Expense Category   Amount ($)
+    Labor              50,000
+    Materials          30,000
+    Overhead           20,000
+  question: |
+    Which expense category has the highest amount?
+- answer: |
+    The total cost for materials is $5,500.
+  context: |
+    Material   Cost per Unit ($)   Quantity   Total Cost ($)
+    A          50                 50         2,500
+    B          30                 50         1,500
+    C          50                 30         1,500
+  question: |
+    What is the total cost for materials?
+- answer: |
+    The average monthly increase is 20 units.
+  context: |
+    Month         Sales (units)
+    January       100
+    February      120
+    March         140
+    April         160
+    May           180
+    June          200
+  question: |
+    Identify the trend in sales from January to June 2023 and calculate the average monthly increase in units sold.
+- answer: |
+    The increase is 25%.
+  context: |
+    Product   Q1 Sales ($)   Q2 Sales ($)
+    A         50,000         55,000
+    B         40,000         50,000
+    C         30,000         33,000
+  question: |
+    Calculate the average monthly sales increase for Product B from Q1 to Q2 2023 in percentage terms.
+task_description: reading finance tables
