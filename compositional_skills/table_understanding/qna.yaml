@@ -349,4 +349,36 @@ seed_examples:
     C         30,000         33,000
   question: |
     Calculate the average monthly sales increase for Product B from Q1 to Q2 2023 in percentage terms.
+- answer: |
+    The average profit margin for May is 54.5%.
+  context: |
+    Month        Revenue ($)   Expenses ($)   Profit ($)
+    April        90,000        42,000         48,000
+    May          110,000       50,000         60,000
+    June         100,000       47,000         53,000
+  question: |
+    Calculate the average profit margin for May.
+- answer: |
+    The average revenue per month is $100,000.
+  context: |
+    Month       Revenue ($)   Expenses ($)   Profit ($)
+    January     120,000       50,000         70,000
+    February    80,000        40,000         40,000
+    March       100,000       45,000         55,000
+    April       90,000        42,000         48,000
+    May         110,000       50,000         60,000
+    June        100,000       47,000         53,000
+- answer: |
+    The average daily sales for the first week of July is 48 units.
+  context: |
+    Date          Units Sold   Revenue ($)   Profit ($)
+    2023-07-01    50           5,000         3,000
+    2023-07-02    45           4,500         2,700
+    2023-07-03    47           4,700         2,820
+    2023-07-04    50           5,000         3,000
+    2023-07-05    48           4,800         2,880
+    2023-07-06    49           4,900         2,940
+    2023-07-07    47           4,700         2,820
+  question: |
+    Calculate the average daily sales for the first week of July.
 task_description: reading finance tables
