@@ -33,14 +33,14 @@ seed_examples:
 - answer: 'To calculate the total number of fruits bought on each day we first sum
     up the number of fruits bought in each day.
 
-    Total fruits for A = 5 (Day 1) + 8 (Day 2) + 4 (Day 3) = 17
+    Total fruits for Day 1 = 5 (A) + 3 (B) + 2 (C) = 10
 
-    Total fruits for B = 3 (Day 1) + 6 (Day 2) + 7 (Day 3) = 16
+    Total fruits for Day 2 = 8 (A) + 6 (B) + 5 (C) = 19
 
-    Total fruits for C = 2 (Day 1) + 5 (Day 2) + 6 (Day 3) = 13
+    Total fruits for Day 3 = 4 (A) + 7 (B) + 6 (C) = 17
 
 
-    Hence on Day 1 the lowest number of fruits were bought and C purchased the least number of fruit.
+    Hence on Day 1 the lowest number of fruits were bought
 
     '
   question: "Consider the following table representing the number of fruits bought\
