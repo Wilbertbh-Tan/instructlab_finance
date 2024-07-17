@@ -329,7 +329,7 @@ seed_examples:
   question: |
     What is the total cost for materials?
 - answer: |
-    The average monthly increase is 20 units.
+    The total sales of units from January to June is 900.
   context: |
     Month         Sales (units)
     January       100
@@ -341,6 +341,18 @@ seed_examples:
   question: |
     Identify the trend in sales from January to June 2023 and calculate the average monthly increase in units sold.
 - answer: |
+    The average monthly increase is 20 units.
+  context: |
+    Month         Sales (units)
+    January       100
+    February      120
+    March         140
+    April         160
+    May           180
+    June          200
+  question: |
+    What is the total sales of units from January to June?
+- answer: |
     The increase is 25%.
   context: |
     Product   Q1 Sales ($)   Q2 Sales ($)
@@ -350,14 +362,14 @@ seed_examples:
   question: |
     Calculate the average monthly sales increase for Product B from Q1 to Q2 2023 in percentage terms.
 - answer: |
-    The average profit margin for May is 54.5%.
+    The month with the most profit is May.
   context: |
     Month        Revenue ($)   Expenses ($)   Profit ($)
     April        90,000        42,000         48,000
     May          110,000       50,000         60,000
     June         100,000       47,000         53,000
   question: |
-    Calculate the average profit margin for May.
+    Which month has the most profit?
 - answer: |
     The average revenue per month is $100,000.
   context: |
@@ -371,7 +383,7 @@ seed_examples:
   question: |
     Calculate the average revenue per month.
 - answer: |
-    The average daily sales for the first week of July is 48 units.
+    The average daily revenue for the first week of July is 48 units.
   context: |
     Date          Units Sold   Revenue ($)   Profit ($)
     2023-07-01    50           5,000         3,000
@@ -382,13 +394,152 @@ seed_examples:
     2023-07-06    49           4,900         2,940
     2023-07-07    47           4,700         2,820
   question: |
-    Calculate the average daily sales for the first week of July.
+    Calculate the average daily revenue for the for July 1st to July 7th.
+- answer: >
+    The percentage increase in revenue from Q1 2022 to Q1 2023 is 25%.
+  context: |
+    Quarter   Revenue ($)
+    Q1 2022   800,000
+    Q1 2023   1,000,000
+  question: |
+    What is the percentage increase in revenue from Q1 2022 to Q1 2023, using Q1 2022 as the base year?
+- answer: >
+    The average percentage completion for the Testing and Deployment tasks is 65%.
+  context: |
+    Task             Completion (%)
+    Planning         100
+    Design           90
+    Development      80
+    Testing          70
+    Deployment       60
+  question: |
+    What is the average percentage completion for the Testing and Deployment tasks?
+- answer: >
+    The percentage of the total units sold in June that were sold on June 5th is 11.33%.
+  context: |
+    Date         Units Sold
+    2023-06-01   250
+    2023-06-02   200
+    2023-06-03   150
+    2023-06-04   180
+    2023-06-05   170
+    2023-06-06   150
+    2023-06-07   400
+  question: |
+    What percentage of the total units sold in June were sold on June 5th?
+- answer: >
+    The average monthly percentage increase in sales from January to March is 18.33%.
+  context: |
+    Month       Sales ($)
+    January     100,000
+    February    120,000
+    March       140,000
+  question: |
+    What is the average percentage increase in sales each month from January to March?
+- answer: >
+    The percentage decrease in expenses from Q4 2022 to Q1 2023 is 10%.
+  context: |
+    Quarter   Expenses ($)
+    Q4 2022   500,000
+    Q1 2023   450,000
+  question: |
+    What is the percentage decrease in expenses from Q4 2022 to Q1 2023, using Q4 2022 as the base quarter?
+- answer: >
+    The total revenue for the first half of 2023 is $1,100,000.
+  context: |
+    Quarter   Revenue ($)
+    Q1 2023   500,000
+    Q2 2023   600,000
+  question: |
+    Calculate the total revenue for the first half of 2023.
+- answer: >
+    The total sales for Product B in Q1 2023 is $105,000.
+  context: |
+    Product   January ($)   February ($)   March ($)
+    B         30,000        35,000         40,000
+  question: |
+    Calculate the total sales for Product B in Q1 2023.
+- answer: >
+    The total cost for the Item A is $5,000.
+  context: |
+    Item        Quantity   Unit Price ($)
+    Item A      100        50
+    Item B      200        30
+    Item C      150        40
+  question: |
+    Calculate the total cost for the Item A.
+- answer: >
+    The total cost for the given items is $14,500.
+  context: |
+    Item        Quantity   Unit Price ($)
+    Item A      100        50
+    Item B      200        30
+    Item C      150        40
+  question: |
+    Calculate the total cost for the given items.
+- answer: >
+    The total expenses for the given categories is $45,000.
+  context: |
+    Category    Expense ($)
+    Labor       20,000
+    Materials   15,000
+    Overhead    10,000
+  question: |
+    Calculate the total expenses for the given categories.
+- answer: >
+    The total investment from the given series is $600,000.
+  context: |
+    Series      Investment ($)
+    Seed        100,000
+    Series A    200,000
+    Series B    300,000
+  question: |
+    Calculate the total investment from the given series.
+- answer: >
+    The total sales for Product A in March is $50,000.
+  context: |
+    Product   January ($)   February ($)   March ($)
+    A          25,000        30,000         50,000
+  question: |
+    Calculate the sum of all sales in March for Product A.
 task_description: |
-  The task should extract specific numerical data from plain text tables based on given questions
-  and accurately perform arithmetic calculations such as sums, averages, and percentages.
-  It should identify trends and comparisons within the data, and clearly provide extracted
-  information concisely and correctly according to the context. Once the answer is given,
-  your job is to provide the logical reasoning. Then evaluate the logical reasoning to ensure the result is correct.
-  If the answer is incorrect, then provide the correct answer and logical reasoning.
-  Once you have evaluated the answer to ensure it is accurate and relevant,
-  only provide me the correct answer to the question and omit the logical reasoning component.
+  Your task is to answer a question by extracting specific data
+  from plain text table data and performing accurate arithmetic calculations.
+  Ensure the results are relevant, accurate, and consistent by following these steps.
+  Instructions:
+  1. **Understand the Question & Table**:
+     - Fully comprehend the question being asked.
+     - Analyze the plain text table to identify and extract the specific data points needed to answer the question.
+  2. **Identify and Extract Data**:
+     - Locate and list all relevant data points from the table.
+     - Ensure that the extracted data points are correctly identified and relevant to the question.
+  3. **Perform Calculations**:
+     - Determine if arithmetic operations such as conversions, sums, averages, and percentages are needed.
+     - Execute the necessary calculations using the extracted data accurately.
+     - Double-check arithmetic operations to ensure correctness.
+  4. **Identify Units and Trends**:
+     - Clearly identify the units involved and required in the question.
+     - Observe and note any trends or comparisons within the data.
+  5. **Logical Reasoning**:
+     - Outline the logical steps needed to reach the answer, including:
+       a. Correct identification of data points
+       b. Consistent use of units
+       c. **Breakdown of Arithmetic Operations**:
+          - Pay extra attention to arithmetic operations
+          - Break down calculations into the simplest steps to avoid mixing up or omitting values
+          - Ensure the correct data is used for each step of the calculation
+       d. Ensuring logical consistency between steps
+  6. **Verify Logic and Accuracy**:
+     - List the logical steps used to arrive at your answer
+     - Evaluate each step to ensure:
+       a. Correct data points identification
+       b. Consistent use of units
+       c. Logical linking between steps and calculations
+  7. **Error Checking and Re-evaluation**:
+     - Introduce a double-checking mechanism to verify that the data extracted is correct
+     - Verify the calculations by breaking down the calculations to its most basic form
+     - If any part of the answer is incorrect, provide the corrected answer
+     - Include the revised logical reasoning steps
+  8. **Final Answer**:
+     - Once confident in the reasoning steps and accuracy of the answer, provide the correct answer to the question,
+       omitting the logical reasoning component.
