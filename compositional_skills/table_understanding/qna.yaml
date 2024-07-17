@@ -172,7 +172,7 @@ seed_examples:
   question: |
     What fees were Andrew Robb paid or earned in cash?
 - answer: |
-    The average number of transactions per day is 450.
+    The average number of transactions per day is 453.
   context: |
     Date         Transactions
     2023-07-01   435
@@ -383,4 +383,12 @@ seed_examples:
     2023-07-07    47           4,700         2,820
   question: |
     Calculate the average daily sales for the first week of July.
-task_description: reading finance tables
+task_description: |
+  The task should extract specific numerical data from plain text tables based on given questions
+  and accurately perform arithmetic calculations such as sums, averages, and percentages.
+  It should identify trends and comparisons within the data, and clearly provide extracted
+  information concisely and correctly according to the context. Once the answer is given,
+  your job is to provide the logical reasoning. Then evaluate the logical reasoning to ensure the result is correct.
+  If the answer is incorrect, then provide the correct answer and logical reasoning.
+  Once you have evaluated the answer to ensure it is accurate and relevant,
+  only provide me the correct answer to the question and omit the logical reasoning component.
