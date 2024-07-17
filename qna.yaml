@@ -40,7 +40,7 @@ seed_examples:
     Total fruits for C = 2 (Day 1) + 5 (Day 2) + 6 (Day 3) = 13
 
 
-    Hence on Day 3 the lowest number of fruits were bought.
+    Hence on Day 1 the lowest number of fruits were bought.
 
     '
   question: "Consider the following table representing the number of fruits bought\
