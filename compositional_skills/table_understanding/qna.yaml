@@ -368,6 +368,8 @@ seed_examples:
     April       90,000        42,000         48,000
     May         110,000       50,000         60,000
     June        100,000       47,000         53,000
+  question: |
+    Calculate the average profit margin for May.
 - answer: |
     The average daily sales for the first week of July is 48 units.
   context: |
